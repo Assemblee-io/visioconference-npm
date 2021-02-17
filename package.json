@@ -1,0 +1,17 @@
+{
+  "name": "visioconference.me",
+  "version": "1.0.0",
+  "description": "La première solution de Visioconférence as a Service (VaaS) 100% made in France pour booster votre activité. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "visioconference"
+  ],
+  "author": "Visioconference.me",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
