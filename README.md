@@ -22,9 +22,13 @@ npm i visioconference.me
 const Visioconference = require("visioconference.me");
 const visioconference = new Visioconference(/* API_KEY */);
 
-// createRoom(room_name, meeting_at, duration)
+/* Create an individual visioconference room
+      room_name (string) (mandatory): "ROOM_NAME"
+      meeting_at (number) (optionnal): 1626711133
+      duration (number) (optionnal): 60
+*/
 visioconference
-  .createRoom("ROOM_NAME", Math.trunc(new Date().getTime() / 1000), 60)
+  .createRoom("ROOM_NAME")
   .then(room => {
     console.log(room); // Display Room information
   })
