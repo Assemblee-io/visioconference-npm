@@ -28,7 +28,7 @@ const visioconference = new Visioconference(/* API_KEY */);
       duration (number) (optionnal): 60
 */
 visioconference
-  .createRoom("ROOM_NAME")
+  .createRoom("ROOM_NAME", 1626711133, 60)
   .then(room => {
     console.log(room); // Display Room information
   })
