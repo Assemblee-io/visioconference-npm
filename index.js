@@ -14,7 +14,7 @@ class Visioconference {
     return await res.json();
   }
 
-  async createRoom(name) {
+  async createRoom(name, meeting_at = Math.trunc(new Date().getTime() / 1000), duration = 60) {
     if (!name) throw new Error("Name is not defined");
     const options = {
       method: "POST",
@@ -23,7 +23,9 @@ class Visioconference {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        name
+        name,
+        meeting_at,
+        duration
       })
     };
     return await this.makeRequest("/entreprise/visio", options);
