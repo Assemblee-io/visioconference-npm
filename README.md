@@ -36,3 +36,18 @@ visioconference
     console.error(error); // Handle error
   });
 ```
+
+### Example response
+
+```json
+{
+    "code": 201,
+    "data": {
+        "iframe": "<iframe allow='camera; microphone; fullscreen; display-capture' 		 src='https://visioconference.me/meet/XXXXXXXX' style='height: 100%; width: 100%; border: 0px;'/>",
+        "uniqid": "XXXXXXXX",
+        "url": "https://visioconference.me/meet/XXXXXXXX",
+        "moderator_token": "ZQ9NYD3D"
+    },
+    "message": ""
+}
+```
